@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+{% import 'bootstrap/wtf.html' as wtf %}
+
+{% block title %}
+				{{ super() }}
+				Welcome To Flask Project
+{% endblock %}
+
+{% block content%}
+				{% if username%}
+								<h1>Bienvenido {{username}}</h1>
+				{%endif%}
+				<div id='barra-lateral1'>
+								<div id='barra2'>
+												<h1>Bienvenidos</h1>
+								</div>
+								<div class="container">
+												{{wtf.quick_form(login_form)}}
+								</div>
+				</div>
+
+{%endblock%}

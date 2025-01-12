@@ -1,41 +1,27 @@
-/* Barra de navegacion */
-.subnavbar{
-				display:inline;
-				padding:5px;
-				border:2px solid #a9a4a2;
-				background: linear-gradient(#ccc8c7,#a9a4a2);
-}
-
-.navbar .navbar-inner {
+ .navbar .navbar-inner {
         padding: 0;
       }
-.navbar .nav {
+      .navbar .nav {
         margin: 0;
         display: table;
         width: 100%;
-}
-.navbar .nav li {
+      }
+      .navbar .nav li {
         display: table-cell;
         width: 1%;
         float: none;
-}
-.navbar .nav li a {
-				font-weight: bold;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
         text-align: center;
         border-left: 1px solid rgba(255,255,255,.75);
         border-right: 1px solid rgba(0,0,0,.1);
-}
-.navbar .nav li:first-child a {
+      }
+      .navbar .nav li:first-child a {
         border-left: 0;
         border-radius: 3px 0 0 3px;
-}
-.navbar .nav li:last-child a {
+      }
+      .navbar .nav li:last-child a {
         border-right: 0;
         border-radius: 0 3px 3px 0;
-}
-/*Imagenes*/
-
-#logo{
-				width:120px;
-				height:100px;
-}
+      }
