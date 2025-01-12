@@ -1,0 +1,27 @@
+#titulo_principal{
+				background-color: red;
+}
+#logo{
+				width:50px;
+				height:30px;
+}
+#navbarul{
+				list-style-type: None;
+				padding:12px;
+				background-color:#a9a4a2;
+				text-align:left;
+}
+#imgnavbar{
+				display:inline;
+				padding:6px;
+}
+a{
+				text-decoration:None;
+				color:#0b0b0b;
+}
+.subnavbar{
+				display:inline;
+				padding:8px;
+				border:2px solid #a9a4a2;
+				background: linear-gradient(#ccc8c7,#a9a4a2);
+}
