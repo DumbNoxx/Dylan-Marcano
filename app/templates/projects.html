@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{%block title%}
+				{{super()}}
+				Projects
+{%endblock%}
+				<link rel='stylesheet' href="{{ url_for('static',filename='css/projects.css') }}"/>
+{%block body%}
+				{%block navbar%}
+								{%include 'navbar.html'%}
+				{%endblock%}
+				{% if username%}
+								<h1>Hola {{username}}</h1>
+								{%block content%}
+								{%endblock%}
+				{%else%}
+								<h1>Pagina no disponible</h1>
+								<p>
+								La razon se debe a que no te has registrado en la pagina, por favor resgistrate 
+								<a href="{{url_for('auth.login')}}">Aqui</a> 
+								Para continuar con la navegacion.
+								</p>
+				{%endif%}
+{%endblock%}
+

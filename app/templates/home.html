@@ -10,14 +10,14 @@
 {% block content%}
 				{% if username%}
 								<h1>Bienvenido {{username}}</h1>
+				{% else %}
+
+								<div id='barra-lateral1'>
+												<div id='barra2'>
+																<h1>Bienvenido</h1>
+																<p>Por favor registrate <a href="{{url_for('auth.login')}}">Aqui</a></p>
+												</div>
+								</div>
 				{%endif%}
-				<div id='barra-lateral1'>
-								<div id='barra2'>
-												<h1>Bienvenidos</h1>
-								</div>
-								<div class="container">
-												{{wtf.quick_form(login_form)}}
-								</div>
-				</div>
 
 {%endblock%}
